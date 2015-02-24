@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b9b57ab3-7d02-4808-a31e-e9b7fc41a98c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/ckeditor/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/Jakefile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/build/build.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/build/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/build/deps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/build/hint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/build/hintrc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/control/control-layers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/control/map-control.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/css/mobile.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/css/screen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/geojson/geojson-sample.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/geojson/geojson.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/leaflet-include.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/map/canvas.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/map/map-mobile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/map/map.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/map/max-bounds.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/map/scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/map/wms-marble.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/map/wms.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/vector/editable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/vector/route.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/vector/vector-bounds.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/vector/vector-canvas.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/vector/vector-mobile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/vector/vector-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/debug/vector/vector.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/dist/images/layers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/dist/images/marker-shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/dist/images/marker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/dist/images/popup-close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/dist/images/zoom-in.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/dist/images/zoom-out.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/dist/leaflet-src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/dist/leaflet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/dist/leaflet.ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/dist/leaflet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/lib/closure-compiler/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/lib/jasmine/jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/lib/jasmine/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/lib/jasmine/jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/runner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/LeafletSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/SpecHelper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/core/ClassSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/core/EventsSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/core/UtilSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/dom/DomEventSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/dom/DomUtilSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/geo/LatLngBoundsSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/geo/LatLngSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/geo/ProjectionSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/geometry/BoundsSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/geometry/PointSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/geometry/TransformationSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/layer/TileLayerSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/layer/vector/PolylineGeometrySpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/spec/suites/map/MapSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/Leaflet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/control/Control.Attribution.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/control/Control.Layers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/control/Control.Zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/control/Control.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/core/Browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/core/Class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/core/Events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/core/Handler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/core/Util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/dom/DomEvent.DoubleTap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/dom/DomEvent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/dom/DomUtil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/dom/Draggable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/dom/transition/Transition.Native.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/dom/transition/Transition.Timer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/dom/transition/Transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geo/LatLng.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geo/LatLngBounds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geo/crs/CRS.EPSG3395.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geo/crs/CRS.EPSG3857.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geo/crs/CRS.EPSG4326.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geo/crs/CRS.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geo/projection/Projection.LonLat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geo/projection/Projection.Mercator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geo/projection/Projection.SphericalMercator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geo/projection/Projection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geometry/Bounds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geometry/LineUtil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geometry/Point.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geometry/PolyUtil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/geometry/Transformation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/FeatureGroup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/GeoJSON.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/ImageOverlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/LayerGroup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/Popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/marker/Icon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/marker/Marker.Drag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/marker/Marker.Popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/marker/Marker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/tile/TileLayer.Canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/tile/TileLayer.WMS.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/tile/TileLayer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/Circle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/CircleMarker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/MultiPoly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/Path.Popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/Path.SVG.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/Path.VML.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/Path.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/Polygon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/Polyline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/canvas/Circle.Canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/canvas/Path.Canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/canvas/Polygon.Canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/layer/vector/canvas/Polyline.Canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/Map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/anim/Map.PanAnimation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/anim/Map.ZoomAnimation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/ext/Map.Control.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/ext/Map.Geolocation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/ext/Map.Popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/handler/Map.BoxZoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/handler/Map.DoubleClickZoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/handler/Map.Drag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/handler/Map.ScrollWheelZoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libraries/leaflet/src/map/handler/Map.TouchZoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet_map.tpl.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/Collection.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/Collection.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/EWKB.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/EWKB.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/GPX.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/GPX.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/GeoJSON.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/GeoJSON.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/GeoRSS.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/GeoRSS.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/Geometry.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/Geometry.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/KML.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/KML.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/leaflet/LICENSE.txt" afterPath="$PROJECT_DIR$/modules/contrib/leaflet/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/LineString.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/LineString.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/MultiLineString.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/MultiLineString.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/Point.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/Point.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/Polygon.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/geometry/Polygon.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/README.md" afterPath="$PROJECT_DIR$/libraries/geoPHP/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/leaflet/README.txt" afterPath="$PROJECT_DIR$/modules/contrib/leaflet/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/WKB.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/WKB.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/WKT.class.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/lib/adapters/WKT.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/tests/input/an_empty_polygon.wkt" afterPath="$PROJECT_DIR$/libraries/geoPHP/tests/input/an_empty_polygon.wkt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/tests/input/box.georss" afterPath="$PROJECT_DIR$/libraries/geoPHP/tests/input/box.georss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/tests/input/circle.georss" afterPath="$PROJECT_DIR$/libraries/geoPHP/tests/input/circle.georss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/context/context.info" afterPath="$PROJECT_DIR$/modules/contrib/context/context.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/context/context_layouts/context_layouts.info" afterPath="$PROJECT_DIR$/modules/contrib/context/context_layouts/context_layouts.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/context/context_ui/context_ui.info" afterPath="$PROJECT_DIR$/modules/contrib/context/context_ui/context_ui.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/context/context_ui/context_ui.module" afterPath="$PROJECT_DIR$/modules/contrib/context/context_ui/context_ui.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/geoPHP.inc" afterPath="$PROJECT_DIR$/libraries/geoPHP/geoPHP.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet.api.php" afterPath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet.api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet.drupal.js" afterPath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet.drupal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet.formatters.inc" afterPath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet.formatters.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet.info" afterPath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet.module" afterPath="$PROJECT_DIR$/modules/contrib/leaflet/leaflet.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/tests/input/line.georss" afterPath="$PROJECT_DIR$/libraries/geoPHP/tests/input/line.georss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/tests/input/polygon.georss" afterPath="$PROJECT_DIR$/libraries/geoPHP/tests/input/polygon.georss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/tests/test.php" afterPath="$PROJECT_DIR$/libraries/geoPHP/tests/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/geoPHP/tests/input/track.gpx" afterPath="$PROJECT_DIR$/libraries/geoPHP/tests/input/track.gpx" />
+    </list>
+    <ignored path="all.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="all" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="template.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/custom/cca/template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-134.58824" vertical-offset="0" max-vertical-offset="5248">
+              <caret line="143" column="32" selection-start-line="143" selection-start-column="32" selection-end-line="143" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cca_theme_blocks.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/custom/theme_modules/cca_theme_blocks/cca_theme_blocks.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.0" vertical-offset="5762" max-vertical-offset="7072">
+              <caret line="196" column="18" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.tpl.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/custom/cca/templates/page.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="809">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cca_theme_blocks.info" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/custom/theme_modules/cca_theme_blocks/cca_theme_blocks.info">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/themes/custom/cca/template.php" />
+        <option value="$PROJECT_DIR$/modules/custom/theme_modules/cca_theme_blocks/cca_theme_blocks.module" />
+        <option value="$PROJECT_DIR$/themes/custom/cca/templates/page.tpl.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1413" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="all">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="all">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="themes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="all">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="themes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="custom/cca">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="all">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="themes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="custom/cca">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="templates">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9b57ab3-7d02-4808-a31e-e9b7fc41a98c" name="Default" comment="" />
+      <created>1423115369379</created>
+      <option name="number" value="Default" />
+      <updated>1423115369379</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="2560" height="1413" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34164777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14217633" sideWeight="0.50057405" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955405" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980143" sideWeight="0.49942595" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14217633" sideWeight="0.49942595" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/libraries/flexslider" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/themes/custom/cca/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4392" max-vertical-offset="5248">
+          <caret line="155" column="1" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/theme_modules/cca_theme_blocks/cca_theme_blocks.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7072">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/cca/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4392" max-vertical-offset="5248">
+          <caret line="155" column="1" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/theme_modules/cca_theme_blocks/cca_theme_blocks.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7072">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/cca/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4392" max-vertical-offset="5248">
+          <caret line="155" column="1" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/theme_modules/cca_theme_blocks/cca_theme_blocks.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7168">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/cca/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5248">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/theme_modules/cca_theme_blocks/cca_theme_blocks.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="859">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/cca/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-134.58824" vertical-offset="0" max-vertical-offset="5248">
+          <caret line="143" column="32" selection-start-line="143" selection-start-column="32" selection-end-line="143" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/theme_modules/cca_theme_blocks/cca_theme_blocks.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0" vertical-offset="5762" max-vertical-offset="7072">
+          <caret line="196" column="18" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/cca/templates/page.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="809">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
