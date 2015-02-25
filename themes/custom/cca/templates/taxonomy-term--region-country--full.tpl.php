@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Default theme implementation to display a term.
@@ -46,17 +45,19 @@
     <?php if (!$page): ?>
         <h2><a href="<?php print $term_url; ?>"><?php print $term_name; ?></a></h2>
     <?php endif; ?>
-    <?php if($content['field_coordinates']): ?>
-        <div class="map"><?php print(render($content['field_coordinates'])); ?></div>
-    <?php endif; ?>
     <div class="content">
         <?php hide($content['field_development_programming_li']); ?>
         <?php hide($content['field_country_region_websites']); ?>
         <?php print render($content); ?>
     </div>
     <div class="divider"></div>
-    <div class="metadata">
-        <?php print(render($content['field_development_programming_li'])); ?>
-        <?php print(render($content['field_country_region_websites'])); ?>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">More Information</h3>
+        </div>
+        <div class="panel-body">
+            <?php print(render($content['field_development_programming_li'])); ?>
+            <?php print(render($content['field_country_region_websites'])); ?>
+        </div>
     </div>
 </div>

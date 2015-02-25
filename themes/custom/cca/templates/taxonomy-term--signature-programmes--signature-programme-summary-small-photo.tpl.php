@@ -6,9 +6,8 @@
         <?php
             hide($content['field_program_preview_img']);
             hide($content['description']);
-            hide($content['projects_of_sub_programme_project_display']);
+
         ?>
-        <?php print render($content); ?>
         <div class="signature-programme-photo">
             <?php if ($content['field_program_preview_img']): ?>
                 <?php print render($content['field_program_preview_img']); ?>
@@ -21,7 +20,14 @@
         </div>
         <div class="signature-programme-projects">
             <?php if ($content['projects_of_sub_programme_project_display']): ?>
-                <?php print render($content['projects_of_sub_programme_project_display']); ?>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Related Projects</h3>
+                    </div>
+                    <div class="panel-body">
+                        <?php print render($content['projects_of_sub_programme_project_display']); ?>
+                    </div>
+                </div>
             <?php endif; ?>
         </div>
     </div>

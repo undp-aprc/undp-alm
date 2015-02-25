@@ -1,6 +1,4 @@
 <?php
-hide($content['field_description']);
-hide($content['field_download']);
 /**
  * @file
  * Default theme implementation to display a node.
@@ -82,42 +80,47 @@ hide($content['field_download']);
  */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-    <?php print render($title_prefix); ?>
-    <?php if (!$page): ?>
-        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-    <?php endif; ?>
-    <?php print render($title_suffix); ?>
-    <div class="content">
-        <div class="node-content-left">
-            <?php if ($content['field_thumbnail']): ?>
-                <div class="cover-image">
-                    <?php print render($content['field_thumbnail']); ?>
-                </div>
-            <?php endif; ?>
-        </div>
-        <div class="node-content-right">
-            <?php if ($content['field_description']): ?>
-                <div class="details">
-                    <?php print render($content['field_description']); ?>
-                </div>
-                <?php if ($content['field_download']): ?>
-                    <div class="download">
-                        <?php print render($content['field_download']); ?>
-                    </div>
-                <?php endif; ?>
-            <?php endif; ?>
-        </div>
+
+  <?php print $user_picture; ?>
+
+  <?php print render($title_prefix); ?>
+  <?php if (!$page): ?>
+    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+  <?php endif; ?>
+  <?php print render($title_suffix); ?>
+
+  <?php if ($display_submitted): ?>
+    <div class="submitted">
+      <?php print $submitted; ?>
     </div>
-    <?php if ($view_mode == 'full'): ?>
-        <div class="node-content-bottom"<?php print $content_attributes; ?>>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">More Information</h3>
-                </div>
-                <div class="panel-body">
-                    <?php print(render($content)); ?>
-                </div>
-            </div>
+  <?php endif; ?>
+
+  <div class="content"<?php print $content_attributes; ?>>
+    <div class="node-content-left">
+      <?php if($content['field_youtube_url']): ?>
+        <?php print(render($content['field_youtube_url'])); ?>
+      <?php endif; ?>
+    </div>
+    <div class="node-content-right">
+      <?php print(render($content['field_description'])); ?>
+      <?php if ($content['field_region']): ?>
+        <div class="panel panel-default">
+          <div class="panel-body">
+        <?php print(render($content['field_region'])); ?>
+          </div>
         </div>
-    <?php endif; ?>
+      <?php endif; ?>
+    </div>
+    <?php
+      // We hide the comments and links now so that we can render them later.
+      hide($content['comments']);
+      hide($content['links']);
+      print render($content);
+    ?>
+  </div>
+
+  <?php print render($content['links']); ?>
+
+  <?php print render($content['comments']); ?>
+
 </div>

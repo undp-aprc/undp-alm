@@ -1,7 +1,10 @@
 <?php
+  hide($content['field_photo']);
+  hide($content['field_photo_caption']);
   hide($content['comments']);
   hide($content['links']);
-  hide($content['group_metadata']);
+  hide($content['field_region']);
+  hide($content['field_project']);
   if($content['field_contact_details']) {
     hide($content['field_contact_details']);
   }
@@ -102,23 +105,37 @@
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    <div class="node-content-left">
-      <?php if ($content['group_photo']): ?>
-        <?php print(render($content['group_photo'])); ?>
-      <?php endif; ?>
-    </div>
+    <?php if($content['field_photo']): ?>
+      <div class="node-content-left">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <?php print(render($content['field_photo'])); ?>
+            </div>
+            <?php if($content['field_photo_caption']): ?>
+              <div class="panel-footer"><?php print(render($content['field_photo_caption'])); ?></div>
+            <?php endif; ?>
+          </div>
+        </div>
+    <?php endif; ?>
     <div class="node-content-right">
       <?php print render($content); ?>
-      <div class="metadata">
-        <?php print(render($content['group_metadata']));?>
+      <div class="panel panel-default">
+        <div class="panel-body">
+            <?php print render($content['field_project']); ?>
+            <?php print render($content['field_region']); ?>
+        </div>
       </div>
     </div>
   </div>
   <?php if($content['field_contact_details']): ?>
-  <div class="contact-details">
-      <h3>For further details:</h3>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">For Further Details:</h3>
+    </div>
+    <div class="panel-body">
       <?php print render($content['field_contact_details']); ?>
-  <div>
+    </div>
+  </div>
   <?php endif; ?>
 
   <?php print render($content['links']); ?>
