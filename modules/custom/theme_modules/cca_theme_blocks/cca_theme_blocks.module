@@ -67,6 +67,9 @@ function cca_theme_blocks_block_view($delta) {
     					$module_path.'/js/vendor/bootstrap/dropdown.js' => array(
     						'type' => 'file',
     					),
+                        $module_path.'/js/vendor/bootstrap/collapse.js' => array(
+                            'type' => 'file',
+                        ),
     				),
                     'css' => array(
                         $module_path.'/css/yamm.css' => array(
