@@ -79,6 +79,14 @@
  * @ingroup themeable
  */
 ?>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
@@ -100,6 +108,13 @@
       <?php if($content['field_youtube_url']): ?>
         <?php print(render($content['field_youtube_url'])); ?>
       <?php endif; ?>
+      <div class="social-media">
+        <ul>
+          <li><a href="<?php print($node_url); ?>" class="twitter-share-button" data-size="large">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+          <li><div class="fb-like" data-href="<?php print($node_url); ?>" data-layout="standard" data-action="recommend" data-show-faces="false" data-share="true"></div>
+        </ul>
+      </div>
     </div>
     <div class="node-content-right">
       <?php print(render($content['field_description'])); ?>
