@@ -9,3 +9,4 @@
         </div>
     <?php endif; ?>
 <?php endforeach; ?>
+</div>
