@@ -145,6 +145,7 @@ function cca_theme_blocks_block_view($delta) {
                     '#dom_variables' => array(
                         'section-container-id' => 'section-where-we-work',
                         'section-container-heading' => t('Where We Work'),
+                        'more-content' => '/project-maps-explorer',
                     ),
             		'#attached' => array(
                         'css' => array(
@@ -176,6 +177,7 @@ function cca_theme_blocks_block_view($delta) {
                 '#dom_variables' => array(
                     'section-container-id' => 'section-how-we-engage',
                     'section-container-heading' => t('How We Engage'),
+                    'more-content' => '/news',
                 ),
             );
         break;
@@ -190,6 +192,7 @@ function cca_theme_blocks_block_view($delta) {
                 '#dom_variables' => array(
                     'section-container-id' => 'section-videos',
                     'section-container-heading' => t('Videos'),
+                    'more-content' => '/videos',
                 ),
                 '#attached' => array(
                     'js' => array(
