@@ -1,6 +1,6 @@
 <header>
     <?php $vars = $variables['elements']['variables']; ?>
-    <div class="logo-section">
+    <div class="container logo-section">
         <div class="row">
             <div class="col-xs-2 hidden-xs">
                 <a href="/"><img src="/<?php echo $vars['theme_path']; ?>/img/logo.svg" /></a>
