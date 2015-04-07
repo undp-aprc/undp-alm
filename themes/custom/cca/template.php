@@ -115,6 +115,16 @@ function cca_preprocess_taxonomy_term(&$variables) {
             $variables['tree_top'] = true;
         }
     }
+    $terms = taxonomy_get_tree(11, 0, 1);
+    $i = 0;
+    foreach ($terms as $term=>$array) {
+        if ($variables['tid'] == $array->tid) {
+            $variables['pos'] = $i + 1;
+            break;
+        } else {
+            $i++;
+        }
+    }
 }
 
 function cca_date_nav_title($params) {
@@ -439,5 +449,29 @@ function cca_textarea($variables) {
   $output .= '<textarea' . drupal_attributes($element['#attributes']) . '>' . check_plain($element['#value']) . '</textarea>';
   $output .= '</div>';
   return $output;
+}
+
+function cca_preprocess_panels_pane(&$variables) {
+    if (in_array('panels_pane__views__projects_of_sub_programme', $variables['theme_hook_suggestions'])) {
+
+    }
+}
+
+function cca_preprocess_views_view(&$variables) {
+    //$count = count($variables['view']->result);
+    $count = 17;
+
+    switch ($count) {
+        case $count % 3 == 0 :
+            // All rows divided into 3 cols
+            $variables['classes_array'][] = 'cols-3';
+            break;
+        case $count % 2 == 0 :
+            // All rows divided into 2 cols
+            $variables['classes_array'][] = 'cols-2';
+            break;
+        default :
+            $variables['classes_array'][] = 'cols-3';
+    }
 }
 ?>

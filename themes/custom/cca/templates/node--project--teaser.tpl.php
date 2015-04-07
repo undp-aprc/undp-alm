@@ -1,13 +1,4 @@
 <?php
-  hide($content['field_photo']);
-  hide($content['field_photo_caption']);
-  hide($content['comments']);
-  hide($content['links']);
-  hide($content['field_region']);
-  hide($content['field_project']);
-  if($content['field_contact_details']) {
-    hide($content['field_contact_details']);
-  }
 /**
  * @file
  * Default theme implementation to display a node.
@@ -88,67 +79,24 @@
  * @ingroup themeable
  */
 ?>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> cca-content-box highlight"<?php print $attributes; ?>>
+
   <?php print $user_picture; ?>
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
-
   <div class="content"<?php print $content_attributes; ?>>
-    <?php if($content['field_photo']): ?>
-      <div class="node-content-left">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <?php print(render($content['field_photo'])); ?>
-          </div>
-          <?php if($content['field_photo_caption']): ?>
-            <div class="panel-footer"><?php print(render($content['field_photo_caption'])); ?></div>
-          <?php endif; ?>
-        </div>
-        <div class="social-media">
-          <ul>
-            <li><a href="<?php print($node_url); ?>" class="twitter-share-button" data-size="large">Tweet</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-            <li><div class="fb-like" data-href="<?php print($node_url); ?>" data-layout="standard" data-action="recommend" data-show-faces="false" data-share="true"></div>
-          </ul>
-        </div>
-      </div>
-    <?php endif; ?>
-    <div class="node-content-right">
-
-      <?php print render($content); ?>
-      <div class="panel panel-default">
-        <div class="panel-body">
-            <?php print render($content['field_project']); ?>
-            <?php print render($content['field_region']); ?>
-        </div>
-      </div>
-    </div>
+    <?php
+      // We hide the comments and links now so that we can render them later.
+      hide($content['comments']);
+      hide($content['links']);
+      hide($content['body']);
+    ?>
+    <?php
+      print render($content);
+    ?>
+      <?php print render($title_prefix); ?>
+      <?php if (!$page): ?>
+          <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+      <?php print render($content['body']); ?>
   </div>
-  <?php if($content['field_contact_details']): ?>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">For Further Details:</h3>
-    </div>
-    <div class="panel-body">
-      <?php print render($content['field_contact_details']); ?>
-    </div>
-  </div>
-  <?php endif; ?>
-
-
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
-
 </div>

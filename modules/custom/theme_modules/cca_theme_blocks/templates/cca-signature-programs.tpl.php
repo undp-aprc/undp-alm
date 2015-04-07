@@ -1,4 +1,3 @@
-<h4 class="hidden-xs">Signature Programs</h4>
 <ul class="signature-programs-list inline-menu">
     <?php foreach($variables['elements']['#items'] as $item): ?>
         <li>

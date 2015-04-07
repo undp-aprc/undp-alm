@@ -2,10 +2,12 @@
 ;(function($) {
     $(document).ready(function() {
 
-        /* $("#video-carousel").slidesjs({
-            width: 940,
-            height: 300
-        }); */
+        // Align .nav to left hand side of container
+        var windowWidth = $(window).width();
+        var containerWidth = $('header > .container').width();
+        var leftMarginWidth = (windowWidth - containerWidth) / 2;
+        $('.nav.navbar-nav').css('margin-left',leftMarginWidth);
+        console.log(containerWidth);
 
         $('.view-featured-resources .node').matchHeight();
         $('.pane-resource-blocks .views-row').matchHeight();

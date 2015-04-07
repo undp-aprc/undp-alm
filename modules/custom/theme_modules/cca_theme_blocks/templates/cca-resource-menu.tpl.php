@@ -1,5 +1,4 @@
 <?php $theme_path = $variables['elements']['variables']['theme_path']; ?>
-<h4 class="hidden-xs">Resources</h4>
 <ul class="resource-menu-list inline-menu">
         <li>
             <a href="/resource-finder">
