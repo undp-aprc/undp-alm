@@ -101,6 +101,9 @@
       hide($content['comments']);
       hide($content['links']);
       ?>
+      <?php if ($content['field_project_subtitle']): ?>
+        <?php print(render($content['field_project_subtitle'])); ?>
+      <?php endif; ?>
       <div id="tabs">
         <?php if ($view_mode == 'full'): ?>
         <ul>

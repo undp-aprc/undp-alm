@@ -461,7 +461,7 @@ function hook_ds_regions_alter(&$layout, $entity) {
 
 /**
  * Alter the field label options. Note that you will either
- * update the preprocess functions or the field.tpl.php file when
+ * update the preprocess functions or the field--field-project-subtitle--project.tpl.php.bak file when
  * adding new options.
  *
  * @param $field_label_options
