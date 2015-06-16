@@ -12,4 +12,3 @@
     <?php $col_count++; ?>
     <?php if ($col_count == 3): ?><?php $col_count = 0; ?></div><?php endif; ?>
 <?php endforeach; ?>
-</div>
