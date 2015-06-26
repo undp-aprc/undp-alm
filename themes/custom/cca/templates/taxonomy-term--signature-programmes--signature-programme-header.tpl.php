@@ -1,6 +1,3 @@
-<?php
-    kpr($variables);
-?>
 <div id="taxonomy-term-<?php print $term->tid; ?>" class="<?php print $classes; ?> view-mode-signature-programme-header">
     <div class="term-page-header">
         <h2>Signature Programme <span class="badge">#<?php print($pos); ?></span></h2>
