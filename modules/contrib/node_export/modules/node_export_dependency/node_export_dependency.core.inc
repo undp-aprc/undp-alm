@@ -217,6 +217,17 @@ function entityreference_node_export_dependency_field($entity_type, $entity, $fi
 function field_collection_node_export_dependency_field($entity_type, $entity, $field, $instance, $langcode, $items) {
   $dependencies = array();
   node_export_dependency_add($dependencies, $items, 'field_collection_item', 'value');
+
+  // Loop all items to add their data for export.
+  foreach($items as $index => $item) {
+    if ($field_collection_item = field_collection_item_load($item['value'])) {
+      // Add the field collection item data to the exported data. Mimics
+      // EntityAPIController::export() without the JSON conversion.
+      $dependencies[$index]['node_export_field_collection_data']
+        = get_object_vars($field_collection_item);
+    }
+  }
+
   return $dependencies;
 }
 
