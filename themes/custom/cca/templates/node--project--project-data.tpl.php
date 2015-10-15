@@ -138,8 +138,10 @@ $path = drupal_get_path('theme','cca');
                     <img src="<?php print $path; ?>/img/ux-icons/icon-partners.svg" />
                     <p>Implementing Agencies & Partner Organisations</p>
                 </div>
-                <div class="col-xs-10"><?php print(render($content['field_project_dates'])); ?></div>
-                <div class="col-xs-10"><?php print(render($content['field_beneficiaries'])); ?></div>
+                <div class="col-xs-10">
+                    <?php print(render($content['field_project_dates'])); ?>
+                    <?php print(render($content['field_beneficiaries'])); ?>
+                </div>
             </div>
         <?php endif; ?>
     </div>
