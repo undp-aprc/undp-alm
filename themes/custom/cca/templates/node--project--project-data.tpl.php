@@ -83,13 +83,13 @@ $path = drupal_get_path('theme','cca');
 ?>
 <div id="node-<?php print $node->nid; ?>" class="project-data-panel <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
     <div class="content"<?php print $content_attributes; ?>>
-        <?php if($content['field_key_collaborators']): ?>
+        <?php if($content['field_level_of_intervention']): ?>
             <div class="col-xs-6">
                 <div class="col-xs-2">
                     <img src="<?php print $path; ?>/img/ux-icons/icon-intervention-levels.svg" />
                     <p>Level of Intervention</p>
                 </div>
-                <div class="col-xs-8"><?php print(render($content['field_key_collaborators'])); ?></div>
+                <div class="col-xs-8"><?php print(render($content['field_level_of_intervention'])); ?></div>
             </div>
         <?php endif; ?>
         <?php if($content['field_funding_source']): ?>

@@ -109,7 +109,6 @@
         <ul>
           <?php if ($active_groups['group_summary']): ?><li><a href="#tab-summary">Overview</a></li><?php endif;?>
           <?php if ($active_groups['group_project_details']): ?><li><a href="#tab-project-details">Project Details</a></li><?php endif;?>
-          <?php if ($active_groups['group_finance']): ?><li><a href="#tab-finance">Finance</a></li><?php endif;?>
           <?php if ($active_groups['group_news']): ?><li><a href="#tab-news">News & Updates</a></li><?php endif;?>
           <?php if ($active_groups['group_country_initiatives']): ?><li><a href="#tab-country-initiatives">Country Initiatives</a></li><?php endif;?>
           <?php if ($active_groups['group_key_results']): ?><li><a href="#tab-key-results">Key Results and Outputs</a></li><?php endif;?>
