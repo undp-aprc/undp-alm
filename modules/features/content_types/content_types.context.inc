@@ -15,7 +15,7 @@ function content_types_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'undp_home';
   $context->description = '';
-  $context->tag = 'undp';
+  $context->tag = 'Path';
   $context->conditions = array(
     'path' => array(
       'values' => array(
@@ -26,11 +26,35 @@ function content_types_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-c97538715ae49602b220eacf2d11c084' => array(
+          'module' => 'views',
+          'delta' => 'c97538715ae49602b220eacf2d11c084',
+          'region' => 'above_content',
+          'weight' => '-10',
+        ),
         'undp_map-undp_main_map' => array(
           'module' => 'undp_map',
           'delta' => 'undp_main_map',
           'region' => 'content',
           'weight' => '-10',
+        ),
+        'views-map_legend-block' => array(
+          'module' => 'views',
+          'delta' => 'map_legend-block',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'views-featured_documents-block' => array(
+          'module' => 'views',
+          'delta' => 'featured_documents-block',
+          'region' => 'below_content',
+          'weight' => '-10',
+        ),
+        'views-featured_videos-block' => array(
+          'module' => 'views',
+          'delta' => 'featured_videos-block',
+          'region' => 'below_content',
+          'weight' => '-9',
         ),
       ),
     ),
@@ -39,7 +63,7 @@ function content_types_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('undp');
+  t('Path');
   $export['undp_home'] = $context;
 
   $context = new stdClass();
@@ -47,7 +71,7 @@ function content_types_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'undp_project';
   $context->description = 'Context for the UNDP project pages';
-  $context->tag = 'undp';
+  $context->tag = 'Content Type';
   $context->conditions = array(
     'node' => array(
       'values' => array(
@@ -61,11 +85,29 @@ function content_types_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-country_and_flag_block-block' => array(
+          'module' => 'views',
+          'delta' => 'country_and_flag_block-block',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
         'undp_map-undp_project_map' => array(
           'module' => 'undp_map',
           'delta' => 'undp_project_map',
-          'region' => 'sidebar_first',
-          'weight' => '-10',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
+        'views-0b6a47121ffb288176f7c5d6aed66513' => array(
+          'module' => 'views',
+          'delta' => '0b6a47121ffb288176f7c5d6aed66513',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
+        'views-partners_block-block' => array(
+          'module' => 'views',
+          'delta' => 'partners_block-block',
+          'region' => 'sidebar_second',
+          'weight' => '-7',
         ),
       ),
     ),
@@ -74,8 +116,8 @@ function content_types_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Content Type');
   t('Context for the UNDP project pages');
-  t('undp');
   $export['undp_project'] = $context;
 
   return $export;
