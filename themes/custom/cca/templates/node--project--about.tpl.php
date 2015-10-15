@@ -89,14 +89,14 @@
       hide($content['links']);
       hide($content['body']);
     ?>
-    <?php print(render($content['field_display_photo'])); ?>
+    <?php //print(render($content['field_display_photo'])); ?>
       <div class="content-wrapper">
           <?php print render($title_prefix); ?>
           <?php if (!$page): ?>
 
           <?php endif; ?>
           <?php print render($title_suffix); ?>
-          <?php print render($content['body']); ?>
+          <?php print render($content); ?>
           </div>
   </div>
     <div class="col-xs-2">
