@@ -79,6 +79,7 @@
  *
  * @ingroup themeable
  */
+kpr($content);
 $path = drupal_get_path('theme','cca');
 ?>
 <div id="node-<?php print $node->nid; ?>" class="project-data-panel <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
@@ -131,7 +132,15 @@ $path = drupal_get_path('theme','cca');
                 <div class="col-xs-10"><?php print(render($content['field_partners'])); ?></div>
             </div>
         <?php endif; ?>
-
-
+        <?php if($content['field_project_dates'] || $content['field_beneficiaries']): ?>
+            <div class="col-xs-6">
+                <div class="col-xs-2">
+                    <img src="<?php print $path; ?>/img/ux-icons/icon-partners.svg" />
+                    <p>Implementing Agencies & Partner Organisations</p>
+                </div>
+                <div class="col-xs-10"><?php print(render($content['field_project_dates'])); ?></div>
+                <div class="col-xs-10"><?php print(render($content['field_beneficiaries'])); ?></div>
+            </div>
+        <?php endif; ?>
     </div>
 </div>
