@@ -1,0 +1,4 @@
+name = Page Component Blocks
+description = Defines blocks that can be inserted into pages to display content from context
+package = Custom
+core = 7.x

@@ -1,4 +1,7 @@
 <?php
+if ($content['field_photo_caption']) {
+    dsm($content);
+}
 /**
  * @file
  * Default theme implementation to display a node.
@@ -79,24 +82,42 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> cca-content-box highlight"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print $user_picture; ?>
-  <div class="content"<?php print $content_attributes; ?>>
+    <?php if (!$page): ?>
+    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+  <?php endif; ?>
+  <?php print render($title_suffix); ?>
+
     <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      hide($content['body']);
+        hide($content['comments']);
+        hide($content['links']);
     ?>
-    <?php print(render($content['field_display_photo'])); ?>
-      <div class="content-wrapper">
-          <?php print render($title_prefix); ?>
-          <?php if (!$page): ?>
-              <h4<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
-          <?php endif; ?>
-          <?php print render($title_suffix); ?>
-          <?php print render($content['body']); ?>
+
+  <div class="content"<?php print $content_attributes; ?>>
+      <?php if ($content['field_image']): ?>
+          <div class="row">
+              <?php hide($content['field_image']); ?>
+              <div class="col-xs-8"><?php print(render($content)); ?></div>
+              <div class="cols col-xs-4">
+                  <div class="panel panel-default">
+                      <div class="panel-body"><?php print(render($content['field_image'])); ?></div>
+                      <?php if($content['field_photo_caption']): ?>
+                          <div class="panel-footer">
+                              <?php print(render($content['field_photo_caption'])); ?>
+                          </div>
+                      <?php endif; ?>
+                  </div>
+              </div>
           </div>
+      <?php else: ?>
+          <?php hide($content['field_image']); ?>
+          <?php hide($content['field_photo_caption']); ?>
+          <?php print render($content); ?>
+      <?php endif; ?>
   </div>
+  <?php print render($content['links']); ?>
+
+  <?php print render($content['comments']); ?>
+
 </div>

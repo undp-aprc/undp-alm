@@ -79,10 +79,10 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> cca-content-box highlight"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
-  <div class="content"<?php print $content_attributes; ?>>
+  <div class="content col-xs-10 "<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
@@ -93,10 +93,14 @@
       <div class="content-wrapper">
           <?php print render($title_prefix); ?>
           <?php if (!$page): ?>
-              <h4<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
+
           <?php endif; ?>
           <?php print render($title_suffix); ?>
           <?php print render($content['body']); ?>
           </div>
   </div>
+    <div class="col-xs-2">
+        <a href="/node/<?php print($variables['nid']); ?>"><img src="/sites/all/themes/custom/cca/img/ux-icons/icon-chevron-right.svg" class="chevron-right"/></a>
+    </div>
+    <div class="clearfix"></div>
 </div>

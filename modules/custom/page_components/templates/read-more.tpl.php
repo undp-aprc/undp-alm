@@ -1,0 +1,1 @@
+<a class="btn btn-default" href="/<?php print($variables['elements']['node']['#links']['node-readmore']['href']); ?>">Read More</a>

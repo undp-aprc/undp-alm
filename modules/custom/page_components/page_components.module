@@ -1,0 +1,101 @@
+<?php
+function page_components_block_info() {
+    $items['slides'] = array(
+        'info' => t('Slides'),
+        'cache' => DRUPAL_CACHE_GLOBAL,
+        'visibility' => BLOCK_VISIBILITY_NOTLISTED
+    );
+
+    return $items;
+}
+
+function page_components_block_view($delta = '') {
+    $module_path = drupal_get_path('module','page_components');
+
+    switch ($delta) {
+        case 'slides':
+            $block['content'] = array(
+                'subject' => t('Page Slides'),
+                '#theme' => 'page_component_slides',
+                '#theme_wrappers' => array(
+                    'page_component_slides_wrapper',
+                ),
+                '#items' => page_component_fetch_items(),
+                '#attached' => array(
+                    'js' => array(
+                        $module_path.'/assets/js/jquery.jcarousel.js' => array(
+                            'type' => 'file',
+                        ),
+                        $module_path.'/assets/js/attach.js' => array(
+                            'type' => 'file',
+                        ),
+                    ),
+                    'css' => array(
+                        $module_path.'/assets/css/page-components.css' => array(
+                            'type' => 'file'
+                        )
+                    )
+                ),
+            );
+            break;
+    }
+
+    return $block;
+
+}
+
+/**
+ * Implements hook_theme().
+ */
+function page_components_theme($existing, $type, $theme, $path) {
+    return array(
+        'page_component_slides' => array(
+            'path' => $path.'/templates/',
+            'template' => 'page-component-slides',
+            'render element' => 'elements',
+        ),
+        'page_component_slides_wrapper' => array(
+            'path' => $path.'/templates/',
+            'template' => 'page-component-slides-wrapper',
+            'render element' => 'elements',
+        ),
+        'read_more_button' => array(
+            'path' => $path.'/templates/',
+            'template' => 'read-more',
+            'render element' => 'elements'
+        ),
+    );
+}
+
+function page_component_fetch_items() {
+    $info = page_manager_get_current_page();
+    $nid = $info['handler']->conf['contexts'][0]['entity_id'];
+
+    $query = new EntityFieldQuery;
+    $items = FALSE;
+
+    if ($result = $query
+        ->entityCondition('entity_type', 'node')
+        ->entityCondition('bundle', array('page'))
+        ->propertyCondition('status', 1)
+        ->fieldCondition('field_project','nid',$nid,'=')
+        ->fieldCondition('field_purpose','value','flex_page_carousel_item','=')
+        ->propertyOrderBy('created','DESC')
+        ->execute()) {
+
+        if($nodes = $result['node']) {
+            foreach($nodes as $delta=>$value) {
+                if(isset($nodes[$delta]->nid)) {
+                    $items[$delta] = node_load($nodes[$delta]->nid);
+                }
+            }
+        }
+
+        return $items;
+    }
+
+
+    return FALSE; //If this is not a node page we won't be generating a carousel.
+}
+
+?>

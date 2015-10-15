@@ -79,24 +79,40 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> cca-content-box highlight"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print $user_picture; ?>
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      hide($content['body']);
+    <?php if (!$page): ?>
+
+  <?php endif; ?>
+  <?php print render($title_suffix); ?>
+
+    <?php hide($content['comments']);
+        hide($content['links']);
     ?>
-    <?php print(render($content['field_display_photo'])); ?>
-      <div class="content-wrapper">
-          <?php print render($title_prefix); ?>
-          <?php if (!$page): ?>
-              <h4<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
-          <?php endif; ?>
-          <?php print render($title_suffix); ?>
-          <?php print render($content['body']); ?>
+
+  <div class="node-content"<?php print $content_attributes; ?>>
+      <?php if ($content['field_image']): ?>
+          <div class="row">
+              <div class="cols col-xs-3">
+                  <?php print(render($content['field_image'])); ?>
+              </div>
+              <div class="col-xs-4">
+                  <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+                  <?php print(render($content)); ?>
+                  <?php print render($content['links']); ?>
+              </div>
           </div>
+      <?php else: ?>
+          <?php hide($content['field_image']); ?>
+          <?php hide($content['field_photo_caption']); ?>
+          <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+          <?php print render($content); ?>
+          <?php print render($content['links']); ?>
+      <?php endif; ?>
   </div>
+
+
+
+  <?php print render($content['comments']); ?>
+
 </div>

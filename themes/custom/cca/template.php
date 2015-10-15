@@ -44,7 +44,7 @@ function cca_process_node(&$variables) {
 }
 
 function cca_preprocess_node(&$variables) {
-    if ($variables['type'] == 'project' || $variables['type'] == 'news' || $variables['type'] == 'resource' || $variables['type'] == 'event') {
+    if ($variables['type'] == 'project' || $variables['type'] == 'news' || $variables['type'] == 'resource' || $variables['type'] == 'event' || $variables['type'] == 'page') {
         $function = 'cca_preprocess_node__'.$variables['type'];
         if (function_exists($function)) {
             $function($variables);
@@ -80,6 +80,10 @@ function cca_preprocess_node__project(&$variables) {
     }
 }
 
+function cca_preprocess_node__page(&$variables) {
+    $variables['content']['links']['#theme'] = 'read_more_button';
+}
+
 function cca_preprocess_node__news(&$variables) {
     if ($variables['field_contact_details'][0]['safe_value'] == '') {
         unset($variables['content']['field_contact_details']);
@@ -93,7 +97,7 @@ function cca_preprocess_node__resource(&$variables) {
 }
 
 function cca_preprocess_page(&$variables) {
-    $variables['title_prefix'] = '<h1>';
+    $variables['title_prefix'] = '<h1 class="">';
     $variables['title_suffix'] = '</h1>';
     
     if ($variables['is_front']) {
