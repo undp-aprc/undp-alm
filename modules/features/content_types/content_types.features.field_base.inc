@@ -1154,6 +1154,45 @@ function content_types_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_related_project'
+  $field_bases['field_related_project'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_related_project',
+    'indexes' => array(
+      'nid' => array(
+        0 => 'nid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'node_reference',
+    'settings' => array(
+      'referenceable_types' => array(
+        'carousel' => 0,
+        'event' => 0,
+        'internal_documentation' => 0,
+        'news' => 0,
+        'page' => 0,
+        'partner' => 0,
+        'project' => 'project',
+        'project_showcase' => 0,
+        'resource' => 0,
+        'rotating_feature' => 0,
+        'video' => 0,
+        'webform' => 0,
+      ),
+      'view' => array(
+        'args' => array(),
+        'display_name' => '',
+        'view_name' => '',
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'node_reference',
+  );
+
   // Exported field_base: 'field_resource_project'
   $field_bases['field_resource_project'] = array(
     'active' => 1,
