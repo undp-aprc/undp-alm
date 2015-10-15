@@ -10,27 +10,6 @@
 function content_types_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'body'
-  $field_bases['body'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(
-      0 => 'node',
-    ),
-    'field_name' => 'body',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
-    'translatable' => 1,
-    'type' => 'text_with_summary',
-  );
-
   // Exported field_base: 'field_beneficiaries'
   $field_bases['field_beneficiaries'] = array(
     'active' => 1,
@@ -863,44 +842,6 @@ function content_types_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'image',
-  );
-
-  // Exported field_base: 'field_project'
-  $field_bases['field_project'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_project',
-    'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'node_reference',
-    'settings' => array(
-      'referenceable_types' => array(
-        'carousel' => 0,
-        'event' => 0,
-        'internal_documentation' => 0,
-        'news' => 0,
-        'page' => 0,
-        'partner' => 0,
-        'project' => 'project',
-        'resource' => 0,
-        'rotating_feature' => 0,
-        'video' => 0,
-        'webform' => 0,
-      ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
-    ),
-    'translatable' => 1,
-    'type' => 'node_reference',
   );
 
   // Exported field_base: 'field_project_about'
