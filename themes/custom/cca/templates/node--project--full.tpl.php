@@ -85,7 +85,7 @@
 
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
@@ -101,9 +101,14 @@
       hide($content['comments']);
       hide($content['links']);
       ?>
-      <?php if ($content['field_project_subtitle']): ?>
-        <?php print(render($content['field_project_subtitle'])); ?>
-      <?php endif; ?>
+      <div class="masthead-image-container">
+          <?php print(render($content['field_display_photo'])); ?>
+          <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+          <?php if ($content['field_project_subtitle']): ?>
+              <?php print(render($content['field_project_subtitle'])); ?>
+          <?php endif; ?>
+      </div>
+
       <div id="tabs">
         <?php if ($view_mode == 'full'): ?>
         <ul>
