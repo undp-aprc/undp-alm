@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Default theme implementation to display a node.
@@ -79,69 +78,22 @@
  *
  * @ingroup themeable
  */
-$path = drupal_get_path('theme','cca');
 ?>
-<div id="node-<?php print $node->nid; ?>" class="project-data-panel <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-    <div class="content"<?php print $content_attributes; ?>>
-        <?php if($content['field_level_of_intervention']): ?>
-            <div class="col-xs-6">
-                <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-intervention-levels.svg" />
-                    <p>Level of Intervention</p>
-                </div>
-                <div class="col-xs-8"><?php print(render($content['field_level_of_intervention'])); ?></div>
-            </div>
-        <?php endif; ?>
-        <?php if($content['field_funding_source']): ?>
-            <div class="col-xs-6">
-                <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-funding-source.svg" />
-                    <p>Source of Funding</p>
-                </div>
-                <div class="col-xs-10"><?php print(render($content['field_funding_source'])); ?></div>
-            </div>
-        <?php endif; ?>
-        <?php if($content['field_key_collaborators']): ?>
-            <div class="col-xs-6">
-                <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-collaboration.svg" />
-                    <p>Key Collaborators</p>
-                </div>
-                <div class="col-xs-10"><?php print(render($content['field_key_collaborators'])); ?></div>
-            </div>
-        <?php endif; ?>
-        <?php if($content['field_financing_amount'] || $content['field_cofinancing_total']): ?>
-            <div class="col-xs-6">
-                <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-funding.svg" />
-                    <p>Financing & Co-Financing</p>
-                </div>
-                <div class="col-xs-10">
-                    <?php print(render($content['field_financing_amount'])); ?>
-                    <?php print(render($content['field_cofinancing_total'])); ?>
-                </div>
-            </div>
-        <?php endif; ?>
-        <?php if($content['field_partners']): ?>
-            <div class="col-xs-6">
-                <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-partners.svg" />
-                    <p>Implementing Agencies & Partner Organisations</p>
-                </div>
-                <div class="col-xs-10"><?php print(render($content['field_partners'])); ?></div>
-            </div>
-        <?php endif; ?>
-        <?php if($content['field_project_dates'] || $content['field_beneficiaries']): ?>
-            <div class="col-xs-6">
-                <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-project-implementation.svg" />
-                    <p>Implementing Agencies & Partner Organisations</p>
-                </div>
-                <div class="col-xs-10">
-                    <?php print(render($content['field_project_dates'])); ?>
-                    <?php print(render($content['field_beneficiaries'])); ?>
-                </div>
-            </div>
-        <?php endif; ?>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+
+    <div class="content col-xs-10 "<?php print $content_attributes; ?>>
+        <?php
+        // We hide the comments and links now so that we can render them later.
+        hide($content['comments']);
+        hide($content['links']);
+        hide($content['body']);
+        ?>
+        <div class="content-wrapper">
+            <?php print render($content); ?>
+        </div>
     </div>
+    <div class="col-xs-2">
+        <a href="/node/<?php print($variables['nid']); ?>#tab-key-results"><img src="/sites/all/themes/custom/cca/img/ux-icons/icon-chevron-right.svg" class="chevron-right" /></a>
+    </div>
+    <div class="clearfix"></div>
 </div>
