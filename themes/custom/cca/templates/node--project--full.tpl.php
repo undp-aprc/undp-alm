@@ -83,18 +83,6 @@
 
   <?php print $user_picture; ?>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
-
   <div class="content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
@@ -103,7 +91,7 @@
       ?>
       <div class="masthead-image-container">
           <?php print(render($content['field_display_photo'])); ?>
-          <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+          <!-- h2 print title -->
           <?php if ($content['field_project_subtitle']): ?>
               <?php print(render($content['field_project_subtitle'])); ?>
           <?php endif; ?>

@@ -3,7 +3,8 @@
 function cca_page_alter(&$page) {
     $theme_path = drupal_get_path('theme','cca');
     /* Add global JS files */
-    drupal_add_js($theme_path.'/js/plugins/jquery.matchHeight-min.js', array('type'=>'file','scope'=>'footer','every_page'=>TRUE));
+    //drupal_add_js($theme_path.'/js/plugins/jquery.matchHeight-min.js', array('type'=>'file','scope'=>'footer','every_page'=>TRUE));
+    drupal_add_js($theme_path.'/js/vendor/masonry/dist/masonry.pkgd.min.js');
     drupal_add_js($theme_path.'/js/main.js', array('type'=>'file','scope'=>'footer','every_page'=>TRUE));
     
     /* Make search form and menu blocks available to header template and unset from page array */
