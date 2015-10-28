@@ -1,6 +1,6 @@
 <?php
 if ($content['field_photo_caption']) {
-    dsm($content);
+
 }
 /**
  * @file
