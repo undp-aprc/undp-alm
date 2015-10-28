@@ -96,11 +96,10 @@
               <?php print(render($content['field_project_subtitle'])); ?>
           <?php endif; ?>
       </div>
-
+      <?php if ($active_groups['group_summary']): ?><?php print(render($content['group_summary'])); ?><?php endif;?>
       <div id="tabs">
         <?php if ($view_mode == 'full'): ?>
         <ul>
-          <?php if ($active_groups['group_summary']): ?><li><a href="#tab-summary">Overview</a></li><?php endif;?>
           <?php if ($active_groups['group_project_details']): ?><li><a href="#tab-project-details">Project Details</a></li><?php endif;?>
           <?php if ($active_groups['group_news']): ?><li><a href="#tab-news">News & Updates</a></li><?php endif;?>
           <?php if ($active_groups['group_country_initiatives']): ?><li><a href="#tab-country-initiatives">Country Initiatives</a></li><?php endif;?>
