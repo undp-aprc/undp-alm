@@ -79,7 +79,7 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> cca-content-box highlight"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> cca-content-box highlight masonry-item"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
   <div class="content clearfix"<?php print $content_attributes; ?>>

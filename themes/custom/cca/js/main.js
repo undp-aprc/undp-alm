@@ -14,7 +14,7 @@
             });
 
             $('.field-name-field-related-project').masonry({
-                itemSelector: '.field-item'
+                itemSelector: '.masonry-item'
             });
         }
 
