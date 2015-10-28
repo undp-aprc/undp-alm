@@ -12,6 +12,10 @@
             $('.view-display-id-signature_subprogrammes_project_block').masonry({
                 itemSelector: '.views-row'
             });
+
+            $('.field-name-field-related-project').masonry({
+                itemSelector: '.field-item'
+            });
         }
 
         setTimeout(masonry, 1000)
