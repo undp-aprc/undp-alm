@@ -1,5 +1,5 @@
 <?php
-dsm($content);
+
 ?>
 <div class="col-sm-4 col-xs-height">
         <a href="/node/<?php print($node->nid); ?>">
