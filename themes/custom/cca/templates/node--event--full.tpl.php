@@ -98,13 +98,5 @@ hide($content['field_project']);
     <div class="content-right"<?php print $content_attributes; ?>>
         <h4><?php print(render($content['field_event_date'])); ?></h4>
         <?php print render($content); ?>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">More Information</h3>
-            </div>
-            <div class="panel-body">
-                <?php print(render($content['field_project'])); ?>
-            </div>
-        </div>
     </div>
 </div>
