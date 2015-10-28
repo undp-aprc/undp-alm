@@ -8,9 +8,13 @@
         var leftMarginWidth = (windowWidth - containerWidth) / 2;
         $('.nav.navbar-nav').css('margin-left',leftMarginWidth);
 
-        $('.view-display-id-signature_subprogrammes_project_block').masonry({
-            itemSelector: '.views-row'
-        });
+        function masonry() {
+            $('.view-display-id-signature_subprogrammes_project_block').masonry({
+                itemSelector: '.views-row'
+            });
+        }
+
+        setTimeout(masonry, 1000)
 
     });
 })(jQuery);
