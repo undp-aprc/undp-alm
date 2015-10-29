@@ -18,7 +18,7 @@
             });
         }
 
-        setTimeout(masonry, 1000)
+        setTimeout(masonry, 3000)
 
     });
 })(jQuery);
