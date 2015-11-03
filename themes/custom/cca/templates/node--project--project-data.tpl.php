@@ -135,7 +135,7 @@ $path = drupal_get_path('theme','cca');
             <div class="col-xs-6">
                 <div class="col-xs-2">
                     <img src="<?php print $path; ?>/img/ux-icons/icon-project-implementation.svg" />
-                    <p>Implementing Agencies & Partner Organisations</p>
+                    <p>Project Implementation</p>
                 </div>
                 <div class="col-xs-10">
                     <?php print(render($content['field_project_dates'])); ?>
