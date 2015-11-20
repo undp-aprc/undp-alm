@@ -39,7 +39,7 @@
     </div>
   <?php endif; ?>
 
-  <div class="pane-content">
+  <div class="pane-content clearfix">
     <?php print render($content); ?>
   </div>
 

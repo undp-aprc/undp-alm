@@ -1,0 +1,53 @@
+.cca-content-box {
+    border:1px solid @gray-lighter;
+    border-top-width:@border-width-thick;
+    border-top-style:solid;
+    margin-bottom:@padding-large-vertical;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05);
+}
+
+.cca-content-box {
+  .content-wrapper {
+    padding:@padding-small-vertical @padding-small-horizontal;
+  }
+}
+
+.cca-content-box.photo-box {
+    padding-top:(@padding-large-vertical * 2);
+    p, h2 {
+        margin:@padding-small-vertical @padding-small-horizontal;
+    }
+}
+
+.cca-content-box.caption-right {
+    img {
+        float:left;
+        margin-right:@padding-small-horizontal;
+    }
+    h2 {
+        margin-top:0;
+    }
+    .clearfix();
+}
+
+.CCAContentBoxVariant(@highlight-border-color, @bg-color:#fff) {
+    border-top-color: darken(@highlight-border-color, 10%);
+    background-color: @bg-color;
+
+}
+
+.cca-content-box.highlight-1 {
+    .CCAContentBoxVariant(@brand-primary);
+}
+
+.cca-content-box.highlight-2 {
+    .CCAContentBoxVariant(@brand-danger);
+}
+
+.cca-content-box.highlight-3 {
+    .CCAContentBoxVariant(@brand-info);
+}
+
+.cca-content-box.highlight-4 {
+    .CCAContentBoxVariant(@brand-warning);
+}

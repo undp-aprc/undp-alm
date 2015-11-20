@@ -109,7 +109,17 @@ function cca_preprocess_page(&$variables) {
         if (!node_access('update',$variables['node'])) {
             unset($variables['tabs']);
         }
+
+        $variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
+        $function = 'cca_preprocess_page__'.$variables['type'];
+        if (function_exists($function)) {
+            $function($variables);
+        }
     }
+}
+
+function cca_preprocess_page__project(&$variables) {
+    kpr($variables);
 }
 
 function cca_preprocess_taxonomy_term(&$variables) {
