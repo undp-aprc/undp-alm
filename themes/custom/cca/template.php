@@ -324,7 +324,7 @@ function cca_menu_local_tasks(&$variables) {
       if (!empty($variables['primary'])) {
         $variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
         $variables['primary']['#prefix'] .= '<nav class="menu-local-tasks">';
-        $variables['primary']['#prefix'] .= '<ul class="nav nav-pills" role="navigation">';
+        //$variables['primary']['#prefix'] .= '<ul class="nav nav-pills" role="navigation">';
         $variables['primary']['#suffix'] = '</ul>';
         $variables['primary']['#suffix'] .= '</nav>';
         $output .= drupal_render($variables['primary']);
