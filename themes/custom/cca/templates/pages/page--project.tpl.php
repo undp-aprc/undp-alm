@@ -10,7 +10,6 @@
         <div class="container">
             <?php if($messages): ?><?php print $messages; ?><?php endif; ?>
             <div class="clearfix"></div>
-            <?php if($title): ?><?php print($title_prefix); ?><?php print($title); ?><?php print($title_suffix); ?><?php endif; ?>
             <?php if($page['sidebar_first']): ?>
                 <?php print render($page['sidebar_first']); ?>
             <?php endif; ?>
