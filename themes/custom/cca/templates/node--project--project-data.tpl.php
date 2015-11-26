@@ -86,7 +86,7 @@ $path = drupal_get_path('theme','cca');
         <?php if($content['field_level_of_intervention']): ?>
             <div class="col-xs-6">
                 <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-intervention-levels.svg" />
+                    <img src="/<?php print $path; ?>/img/ux-icons/icon-intervention-levels.svg" />
                     <p>Level of Intervention</p>
                 </div>
                 <div class="col-xs-8"><?php print(render($content['field_level_of_intervention'])); ?></div>
@@ -95,7 +95,7 @@ $path = drupal_get_path('theme','cca');
         <?php if($content['field_funding_source']): ?>
             <div class="col-xs-6">
                 <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-funding-source.svg" />
+                    <img src="/<?php print $path; ?>/img/ux-icons/icon-funding-source.svg" />
                     <p>Source of Funding</p>
                 </div>
                 <div class="col-xs-10"><?php print(render($content['field_funding_source'])); ?></div>
@@ -104,7 +104,7 @@ $path = drupal_get_path('theme','cca');
         <?php if($content['field_key_collaborators']): ?>
             <div class="col-xs-6">
                 <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-collaboration.svg" />
+                    <img src="/<?php print $path; ?>/img/ux-icons/icon-collaboration.svg" />
                     <p>Key Collaborators</p>
                 </div>
                 <div class="col-xs-10"><?php print(render($content['field_key_collaborators'])); ?></div>
@@ -113,7 +113,7 @@ $path = drupal_get_path('theme','cca');
         <?php if($content['field_financing_amount'] || $content['field_cofinancing_total']): ?>
             <div class="col-xs-6">
                 <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-funding.svg" />
+                    <img src="/<?php print $path; ?>/img/ux-icons/icon-funding.svg" />
                     <p>Financing & Co-Financing</p>
                 </div>
                 <div class="col-xs-10">
@@ -125,7 +125,7 @@ $path = drupal_get_path('theme','cca');
         <?php if($content['field_partners']): ?>
             <div class="col-xs-6">
                 <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-partners.svg" />
+                    <img src="/<?php print $path; ?>/img/ux-icons/icon-partners.svg" />
                     <p>Implementing Agencies & Partner Organisations</p>
                 </div>
                 <div class="col-xs-10"><?php print(render($content['field_partners'])); ?></div>
@@ -134,7 +134,7 @@ $path = drupal_get_path('theme','cca');
         <?php if($content['field_project_dates'] || $content['field_beneficiaries']): ?>
             <div class="col-xs-6">
                 <div class="col-xs-2">
-                    <img src="<?php print $path; ?>/img/ux-icons/icon-project-implementation.svg" />
+                    <img src="/<?php print $path; ?>/img/ux-icons/icon-project-implementation.svg" />
                     <p>Project Implementation</p>
                 </div>
                 <div class="col-xs-10">

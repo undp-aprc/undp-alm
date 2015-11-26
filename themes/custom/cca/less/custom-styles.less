@@ -16,7 +16,6 @@ h2.pane-title {
     overflow-x: hidden;
     .container {
       max-width:@screen-lg;
-      padding-bottom: @padding-large-vertical;
     }
     header {
         background-color: @blue-237;
@@ -24,6 +23,7 @@ h2.pane-title {
         z-index:100;
         margin:0 0 @padding-large-vertical 0;
         padding-top:@padding-large-vertical;
+        border-top:1px solid @blue-38;
         > .container {
             //padding:@padding-large-vertical @padding-large-horizontal;
             @media (max-width: @screen-xs-max) {
@@ -113,20 +113,11 @@ h2.pane-title {
                     .inline-menu {
                         list-style: none;
                         padding: 0;
-                        li {
-                            width: 18%;
-                            display: inline-block;
-                            vertical-align: top;
-                            margin: 0 1%;
+                        div {
                             h5 {
                                 text-align: center;
+                                padding:0 @padding-small-horizontal;
                             }
-                        }
-                        li:first-child {
-                            margin-left: 0;
-                        }
-                        li:last-child {
-                            margin-right: 0;
                         }
                         a {
                             color: @gray-102;
@@ -167,22 +158,25 @@ h2.pane-title {
             color:#fff;
             text-align: center;
         }
-        .menu-local-tasks {
-            .cca-nav-pills();
-            a {
-                border:@gray-204 1px solid;
-                border-radius:@border-radius-large;
-                padding:@padding-small-vertical @padding-small-horizontal;
-            }
-            a.active {
-                background-color:@gray-85;
-                color:@blue-gray-163;
-            }
-            a:hover {
-                background-color:@gray-204;
-                color:#fff;
-            }
-            margin:@padding-large-vertical*3 0;
+    }
+    .menu-local-tasks {
+        li {
+            display:inline-block;
+            width:150px;
+            text-align: center;
+        }
+        a {
+            //border-radius:@border-radius-large;
+            padding:@padding-large-vertical;
+            display:block;
+        }
+        a.active {
+            background-color:@gray-85;
+            color:@blue-gray-163;
+        }
+        a:hover {
+            background-color:@gray-204;
+            color:#fff;
         }
     }
 }
@@ -756,9 +750,6 @@ footer:after {
 
 .page-taxonomy-term {
     .view-signature-programme-pages-listings {
-      .field-name-field-summary {
-        font-size:2em;
-      }
       .term-page-header {
         img {
 
@@ -1727,14 +1718,45 @@ h1.pane-title, h2.pane-title {
 }
 
 .menu-name-menu-programmes {
-    padding:@padding-large-vertical @padding-large-horizontal;
-    background-color: @blue-237;
-    > .menu {
-        padding:0;
+    ul {
         list-style: none;
-        li {
-            //list-style: none;
+        padding:0;
+    }
+    >.menu {
+        background-color: @blue-38;
+        a {
+            color: white;
+            font-weight: bold;
+            margin:0 @padding-large-horizontal;
+            display:block;
+            padding: @padding-large-vertical 0;
         }
+    }
+    .menu {
+        .menu {
+            list-style: square;
+            list-style-position: inside;
+            background-color: @blue-237;
+            li {
+                padding-left: @padding-large-horizontal;
+                a {
+                    color:black;
+                    font-weight: normal;
+                    margin:0;
+                    padding:0;
+                }
+
+            }
+        }
+
     }
 
 }
+
+.node-type-project {
+    img {
+        max-width:100%;
+    }
+}
+
+
