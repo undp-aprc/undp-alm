@@ -1,6 +1,6 @@
 <ul class="signature-programs-list inline-menu">
     <?php foreach($variables['elements']['#items'] as $item): ?>
-        <div class="col-xs-2">
+        <div class="col-sm-2">
             <a href="/taxonomy/term/<?php print $item['tid'] ?>">
                 <span class="hidden-xs"><?php print(render($item['img'])); ?></span>
                 <h5><?php print $item['title']; ?></h5>

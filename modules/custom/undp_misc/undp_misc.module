@@ -34,3 +34,16 @@ function undp_misc_tokens($type, $tokens, array $data = array(), array $options 
   return $replacements;
 
 } // undp_misc_tokens
+
+function undp_misc_menu() {
+  $items['projects/%/%'] = array(
+      'page callback' => 'undp_misc_redirect',
+      'page arguments' => array(1, 2),
+      'access callback' => TRUE,
+  );
+  return $items;
+}
+
+function undp_misc_redirect($arg1, $arg2) {
+  drupal_goto('projects/'.$arg1);
+}
