@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Project feature.
  */
+
+include_once 'project.features.inc';
