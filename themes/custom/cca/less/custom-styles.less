@@ -519,7 +519,7 @@ footer:after {
             width:50%;
         }
         ul {
-            padding-left:@padding-large-horizontal;
+            //padding-left:@padding-large-horizontal;
             list-style-position: outside;
             li {
 
@@ -590,6 +590,24 @@ footer:after {
     .view-country-flag-and-map {
         background-color:@blue-237;
     }
+    .view-partners-block {
+      .views-field-field-logo {
+        .field-content {
+          text-align: center;
+        }
+      }
+      .views-row {
+        margin-bottom: @padding-large-vertical;
+        padding-bottom: @padding-large-vertical;
+        border-bottom: 1px dotted @green-171;
+      }
+    }
+    .field-name-field-project-photos {
+      .flexslider-content {
+        margin-bottom:0 !important;
+      }
+    }
+
 }
 
 .view-display-id-project_explorer, .view-display-id-regional_project_explorer {

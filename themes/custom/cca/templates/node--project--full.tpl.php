@@ -91,15 +91,16 @@
       ?>
       <div class="masthead-image-container">
           <?php print(render($content['field_display_photo'])); ?>
-          <!-- h2 print title -->
+
           <?php if ($content['field_project_subtitle']): ?>
               <?php print(render($content['field_project_subtitle'])); ?>
           <?php endif; ?>
       </div>
-      <?php if ($active_groups['group_summary']): ?><?php print(render($content['group_summary'])); ?><?php endif;?>
+      <h2><?php print($title); ?></h2>
       <div id="tabs">
         <?php if ($view_mode == 'full'): ?>
         <ul>
+          <?php if ($active_groups['group_summary']): ?><li><a href="#tab-project-summary">Project Overview</a></li><?php endif;?>
           <?php if ($active_groups['group_project_details']): ?><li><a href="#tab-project-details">Project Details</a></li><?php endif;?>
           <?php if ($active_groups['group_news']): ?><li><a href="#tab-news">News & Updates</a></li><?php endif;?>
           <?php if ($active_groups['group_country_initiatives']): ?><li><a href="#tab-country-initiatives">Country Initiatives</a></li><?php endif;?>
@@ -112,7 +113,79 @@
           <?php if ($active_groups['group_contacts']): ?><li><a href="#tab-contacts">Contacts</a></li><?php endif;?>
         </ul>
         <?php endif; ?>
-          <?php print render($content); ?>
+          <?php if($active_groups['group_summary']):?>
+              <div id="tab-project-summary" class="container">
+                  <h3>Project Overview</h3>
+                  <div class="row">
+                        <div class="col-md-8">
+                            <?php print(render($content['group_summary'])); ?>
+                        </div>
+                          <div class="col-md-4">
+                              <?php print views_embed_view('partners_block','block', $node->nid); ?>
+                          </div>
+                  </div>
+              </div>
+          <?php endif; ?>
+          <?php if($active_groups['group_project_details']):?>
+              <div id="tab-project-details">
+                  <h3>Project Details</h3>
+                  <?php print(render($content['group_project_details'])); ?>
+              </div>
+          <?php endif; ?>
+          <?php if($active_groups['group_news']):?>
+              <div id="tab-project-details">
+                  <h3>News</h3>
+                  <?php print(render($content['group_news'])); ?>
+              </div>
+          <?php endif; ?>
+          <?php if($active_groups['group_country_initiatives']):?>
+              <div id="tab-project-details">
+                  <h3>Country Initiatives</h3>
+                  <?php print(render($content['group_country_initiatives'])); ?>
+              </div>
+          <?php endif; ?>
+          <?php if($active_groups['group_key_results']):?>
+              <div id="tab-key-results">
+                  <h3>Key Results and Outputs</h3>
+                  <?php print(render($content['group_key_results'])); ?>
+              </div>
+          <?php endif; ?>
+          <?php if($active_groups['group_meetings']):?>
+              <div id="tab-meetings">
+                  <h3>Programme Meetings and Workshops</h3>
+                  <?php print(render($content['group_meetings'])); ?>
+              </div>
+          <?php endif; ?>
+          <?php if($active_groups['group_reports']):?>
+              <div id="tab-reports">
+                  <h3>Reports and Publications</h3>
+                  <?php print(render($content['group_reports'])); ?>
+              </div>
+          <?php endif; ?>
+          <?php if($active_groups['group_multimedia']):?>
+              <div id="tab-multimedia">
+                  <h3>Multimedia</h3>
+                  <?php print(render($content['group_multimedia'])); ?>
+              </div>
+          <?php endif; ?>
+          <?php if($active_groups['group_monitoring']):?>
+              <div id="tab-monitoring">
+                  <h3>Monitoring and Evaluation</h3>
+                  <?php print(render($content['group_monitoring'])); ?>
+              </div>
+          <?php endif; ?>
+          <?php if($active_groups['group_links']):?>
+              <div id="tab-links">
+                  <h3>Links</h3>
+                  <?php print(render($content['group_links'])); ?>
+              </div>
+          <?php endif; ?>
+          <?php if($active_groups['group_contacts']):?>
+              <div id="tab-contacts">
+                  <h3>Contacts</h3>
+                  <?php print(render($content['group_contacts'])); ?>
+              </div>
+          <?php endif; ?>
       </div>
   </div>
 
