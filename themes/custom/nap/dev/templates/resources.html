@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>NAP-GSP</title>
+    <script src="assets/js/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/jcarousel/jquery.jcarousel.min.js"></script>
+    <script src="assets/js/leaflet/leaflet.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/country-map.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/js/leaflet/leaflet.css">
+</head>
+<body>
+    <header>
+        <div id="main-menu">
+            <div class="container">
+                <ul id="main-menu-list">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="countries.html">countries</a></li>
+                    <li  class="active"><a href="resources.html">resources</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo"><img src="../../assets/img/nap-gsp-logo.svg" alt="logo"></div>
+        </div>
+        <div class="ribbon-wrapper hidden-xs">
+            <div class="ribbon-wrapper-green"><a href="#"><div class="ribbon-green">sign up for our newsletter</div></a></div>
+        </div>​
+    </header>
+    <main>
+        <div class="content">
+            <div class="container">
+                <h1>NAP-GSP Resources</h1>
+                <div class="row">
+                    <div class="sidebar-first col-xs-4">
+                        <div class="exposed-resource-form">
+                            <form>
+                                <label for="resource-type">Select a resource type</label>
+                                <select name="resource-type" id="resource-type" class="form-control">
+                                    <option value="none">-- Select a resource type --</option>
+                                    <option value="report">Report</option>
+                                    <option value="publication">Publication</option>
+                                    <option value="newsletter">Newsletter</option>
+                                </select>
+                                <br/>
+                                <label for="resource-country">Select a country</label>
+                                <select name="resource-country" id="resource-country" class="form-control">
+                                    <option value="none">-- Select a country --</option>
+                                    <option value="bangladesh">Bangladesh</option>
+                                    <option value="benin">Benin</option>
+                                    <option value="burkina-faso">Burkina Faso</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="main col-xs-8">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                National Adaptation Plans - Technical Guidelines for NAP Process
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-sm-2">
+                                    <img src="assets/img/samples/cover-1.jpg" />
+                                </div>
+                                <div class="col-sm-10">
+                                    <p>The Least Developed Countries Expert Group (LEG) technical guidelines are aimed at assisting developing countries to produce their National Adaptation (NAPs) in a comprehensive and strategic manner.</p>
+                                    <a href="#" class="btn btn-default">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">PROVIA Guidance on Assessing Vulnerability, Impacts and Adaptation to Climate Change</div>
+                            <div class="panel-body">
+                                <div class="col-sm-2">
+                                    <img src="assets/img/samples/cover-2.jpg" />
+                                </div>
+                                <div class="col-sm-10">
+                                    <p>The PROVIA Guidance, published in November 2013, aims to meet a growing demand for knowledge on climate change vulnerability, impacts and adaptation. It provides clear technical guidance that combines robust science with explicit consideration of user needs at the local, national and international levels, in both developed and developing countries. It is a particularly important resource when preparing National Adaptation Plans.</p>
+                                    <a href="#" class="btn btn-default">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="logo-heading">
+                Proudly Supported By
+            </div>
+            <div class="clearfix"></div>
+            <div id="logo-list">
+                <div class="row top">
+                    <div class="logo-container undp"><img src="assets/img/logos/undp.svg" /></div>
+                    <div class="logo-container unep"><img src="assets/img/logos/unep.svg" /></div>
+                    <div class="logo-container gef"><img src="assets/img/logos/gef.svg" /></div>
+                    <div class="logo-container unfccc"><img src="assets/img/logos/unfccc.svg" /></div>
+                    <div class="logo-container fao"><img src="assets/img/logos/fao.svg" /></div>
+                    <div class="logo-container giz"><img src="assets/img/logos/giz.svg" /></div>
+                </div>
+                <div class="row bottom">
+                    <div class="logo-container global-water-partnership"><img src="assets/img/logos/global-water-partnership.svg" /></div>
+                    <div class="logo-container unisdr"><img src="assets/img/logos/unisdr.svg" /></div>
+                    <div class="logo-container ifad"><img src="assets/img/logos/ifad.svg" /></div>
+                    <div class="logo-container who"><img src="assets/img/logos/who.svg" /></div>
+                </div>
+                <!--<li>UNEP</li>
+                <li>GEF</li>
+                <li>??</li>
+                <li>FAO</li>
+                <li>GIZ</li>
+                <li>Global Water Partnership</li>
+                <li>UNISDR</li>
+                <li>IFAD</li>
+                <li>WHO</li>-->
+            </div>
+        </div>
+    </footer>
+    <script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

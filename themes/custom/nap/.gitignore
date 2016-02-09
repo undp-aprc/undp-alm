@@ -1,0 +1,5 @@
+.DS_Store
+.idea
+assets/less/*
+assets/node_modules
+assets/bower_components
