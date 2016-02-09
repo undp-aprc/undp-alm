@@ -19,27 +19,27 @@
 ?>
 <div class="panel-display panel-3col-stacked clearfix" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
   <?php if ($content['top']): ?>
-    <div class="panel-panel panel-col-top">
+    <div class="col col-sm-12">
       <div class="inside"><?php print $content['top']; ?></div>
     </div>
   <?php endif ?>
 
   <div class="center-wrapper">
-    <div class="panel-panel panel-col-first">
+    <div class="col col-sm-3">
       <div class="inside"><?php print $content['left']; ?></div>
     </div>
 
-    <div class="panel-panel panel-col">
+    <div class="col col-sm-6">
       <div class="inside"><?php print $content['middle']; ?></div>
     </div>
 
-    <div class="panel-panel panel-col-last">
+    <div class="col col-sm-3">
       <div class="inside"><?php print $content['right']; ?></div>
     </div>
   </div>
 
   <?php if ($content['bottom']): ?>
-    <div class="panel-panel panel-col-bottom">
+    <div class="col col-sm-12">
       <div class="inside"><?php print $content['bottom']; ?></div>
     </div>
   <?php endif ?>

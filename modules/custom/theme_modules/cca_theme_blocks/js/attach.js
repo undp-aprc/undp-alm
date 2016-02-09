@@ -25,7 +25,7 @@
 
 			$('#section-videos .slidesjs').slidesjs({
 				width:940,
-				height:180,
+				height:300,
 				play: {
 					interval:5000,
 					auto:false

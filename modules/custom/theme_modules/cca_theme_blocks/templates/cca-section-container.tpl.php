@@ -1,5 +1,5 @@
 <?php $elements = $variables['elements']; ?>
-<div class="row section-content hidden-xs" id="<?php print $elements['#dom_variables']['section-container-id']; ?>">
+<div class="row section-content" id="<?php print $elements['#dom_variables']['section-container-id']; ?>">
     <div class="container">
         <h1>
             <?php print $elements['#dom_variables']['section-container-heading']; ?>

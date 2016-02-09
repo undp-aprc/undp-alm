@@ -109,7 +109,17 @@ function cca_preprocess_page(&$variables) {
         if (!node_access('update',$variables['node'])) {
             unset($variables['tabs']);
         }
+
+        $variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
+        $function = 'cca_preprocess_page__'.$variables['type'];
+        if (function_exists($function)) {
+            $function($variables);
+        }
     }
+}
+
+function cca_preprocess_page__project(&$variables) {
+    kpr($variables);
 }
 
 function cca_preprocess_taxonomy_term(&$variables) {
@@ -314,7 +324,7 @@ function cca_menu_local_tasks(&$variables) {
       if (!empty($variables['primary'])) {
         $variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
         $variables['primary']['#prefix'] .= '<nav class="menu-local-tasks">';
-        $variables['primary']['#prefix'] .= '<ul class="nav nav-pills" role="navigation">';
+        //$variables['primary']['#prefix'] .= '<ul class="nav nav-pills" role="navigation">';
         $variables['primary']['#suffix'] = '</ul>';
         $variables['primary']['#suffix'] .= '</nav>';
         $output .= drupal_render($variables['primary']);

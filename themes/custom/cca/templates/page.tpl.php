@@ -1,10 +1,15 @@
 <div class="cca-page container-fluid">
+
+    <?php if($tabs): ?>
+        <div class="container">
+            <?php print render($tabs); ?>
+        </div>
+    <?php endif; ?>
     <?php print(render($page['header'])); ?> 
     <!-- Content Container -->
     <main>
         <div class="container">
             <?php if($messages): ?><?php print $messages; ?><?php endif; ?>
-            <?php if($tabs): ?><?php print render($tabs); ?><?php endif; ?>
             <div class="clearfix"></div>
             <?php if($title): ?><?php print($title_prefix); ?><?php print($title); ?><?php print($title_suffix); ?><?php endif; ?>
             <?php if($page['sidebar_first']): ?>

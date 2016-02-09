@@ -15,15 +15,15 @@
  */
 ?>
 <div class="panel-display panel-3col clearfix" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-  <div class="panel-panel panel-col-first">
+  <div class="col col-sm-3">
     <div class="inside"><?php print $content['left']; ?></div>
   </div>
 
-  <div class="panel-panel panel-col">
+  <div class="col col-sm-6">
     <div class="inside"><?php print $content['middle']; ?></div>
   </div>
 
-  <div class="panel-panel panel-col-last">
+  <div class="col col-sm-3">
     <div class="inside"><?php print $content['right']; ?></div>
   </div>
 </div>

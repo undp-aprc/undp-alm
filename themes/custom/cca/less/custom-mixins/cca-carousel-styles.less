@@ -1,0 +1,19 @@
+.carousel-style(@img-width) {
+    .item {
+        .make-sm-column-push(2);
+        img {
+            .make-sm-column(4);
+            border-width:@border-width-thick;
+            border-color:#fff;
+            border-style:solid;
+            margin-bottom:(@padding-large-vertical*6);
+            padding:0;
+        }
+        .carousel-caption {
+            .make-sm-column(4);
+            .make-sm-column-push(0);
+            top:(@padding-large-vertical * -4);
+            text-align:left;
+        } 
+    }
+}
