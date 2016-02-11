@@ -133,13 +133,13 @@
               </div>
           <?php endif; ?>
           <?php if($active_groups['group_news']):?>
-              <div id="tab-project-details">
+              <div id="tab-news">
                   <h3>News</h3>
                   <?php print(render($content['group_news'])); ?>
               </div>
           <?php endif; ?>
           <?php if($active_groups['group_country_initiatives']):?>
-              <div id="tab-project-details">
+              <div id="tab-country-initiatives">
                   <h3>Country Initiatives</h3>
                   <?php print(render($content['group_country_initiatives'])); ?>
               </div>
