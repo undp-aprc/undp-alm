@@ -5,7 +5,7 @@ h1, h2, h3, h4 {
 
 @media screen and (max-width:@screen-xs) {
     h1, h2, h3, h4 {
-        font-size: 14pt !important;
+        font-size: 14pt;
     }
 }
 
@@ -335,12 +335,17 @@ footer:after {
             color:@gray-204;
             font-weight: 100;
         }
-        @media (max-width: @screen-lg) {
+        @media (min-width: @screen-lg) {
             h2 {
-                font-size:@font-size-base * 1.5 !important;
+                font-size:@font-size-base * 1.5;
             }
             button {
                 padding:@padding-small-vertical @padding-small-horizontal;
+            }
+        }
+        @media (max-width: @screen-md-max) {
+            h2 {
+              font-size:12pt;
             }
         }
     }
@@ -357,35 +362,49 @@ footer:after {
         width:40px;
         background-repeat:no-repeat;
     }
-    .slidesjs-navigation.slidesjs-previous {
+    @media (min-width: @screen-md) {
+      .slidesjs-navigation.slidesjs-previous {
         left:0;
         background-image:url('../img/ux-icons/carousel-back.svg');
-    }
-    .slidesjs-navigation.slidesjs-next {
+      }
+      .slidesjs-navigation.slidesjs-next {
         right:0;
         background-image:url('../img/ux-icons/carousel-forward.svg');
-    }
-    .slidesjs-pagination {
+      }
+      .slidesjs-pagination {
         .make-sm-column(8);
         .make-sm-column-push(4);
         list-style:none;
         .slidesjs-pagination-item {
-            float:left;
-            a {
-                display:inline-block;
-                margin:0 @padding-large-horizontal;
-                text-indent:-9999em;
-                background-image:url('../img/ux-icons/carousel-page-inactive.svg');
-                background-repeat:no-repeat;
-                width:20px;
-                height:40px;
-                padding-top:10px;
-            }
-            a.active {
-                background-image:url('../img/ux-icons/carousel-page-active.svg');
-            }
+          float:left;
+          a {
+            display:inline-block;
+            margin:0 @padding-large-horizontal;
+            text-indent:-9999em;
+            background-image:url('../img/ux-icons/carousel-page-inactive.svg');
+            background-repeat:no-repeat;
+            width:20px;
+            height:40px;
+            padding-top:10px;
+          }
+          a.active {
+            background-image:url('../img/ux-icons/carousel-page-active.svg');
+          }
         }
-    } 
+      }
+    }
+    @media (max-width: @screen-sm-max) {
+      .slidesjs-navigation.slidesjs-previous {
+        display:none;
+      }
+      .slidesjs-navigation.slidesjs-next {
+        display:none;
+      }
+      .slidesjs-pagination {
+        display:none;
+      }
+    }
+
 }
 
 /* Carousel: Specific instance modifications */
@@ -403,13 +422,25 @@ footer:after {
         .make-xs-column(4);
     }
     .slide-caption {
-        width:45%;
-        float:left;
-        h2 {
-            font-size:(@font-size-base * 1.5);
-            margin-top:0;
-        }
+      width:45%;
+      float:left;
     }
+    @media (min-width: @screen-lg) {
+      h2 {
+        font-size:(@font-size-base * 1.5);
+        margin-top:0;
+      }
+    }
+    @media (max-width: @screen-md-max) {
+      h2 {
+        font-size:(@font-size-base * 0.7);
+        margin-top:0;
+      }
+      p {
+        font-size: 8pt;
+      }
+    }
+
 }
 
 #section-videos {
